@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Fashion Shop</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(https://img5.pic.in.th/file/secure-sv1/Wallpaper-.jpg);
+            color: #444;
+        }
+
+        /* ส่วนหัว */
+        header {
+            background-image: url(https://img5.pic.in.th/file/secure-sv1/Funky-Wallpaper.jpg);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        /* ไอคอนโปรไฟล์ */
+        .profile {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        /* เมนูนำทาง */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #bebebe;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #444;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        /* แกลลอรี่ */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .gallery div {
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- ส่วนหัว -->
+    <header>
+        <div class="profile">
+            <img src="" alt="Profile Icon">
+            <span>Username</span>
+        </div>
+        <h1>Fashion Shop</h1>
+        <p>Your style, your way!</p>
+    </header>
+
+    <!-- เมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- แกลลอรี่ -->
+    <div class="gallery">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

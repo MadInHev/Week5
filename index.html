@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Shop</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(https://img5.pic.in.th/file/secure-sv1/Wallpaper-.jpg);
+            color: #444;
+        }
+
+        /* ส่วนหัว */
+        header {
+            background-image: url(https://img5.pic.in.th/file/secure-sv1/Funky-Wallpaper.jpg);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        /* ไอคอนโปรไฟล์ */
+        .profile {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        /* เมนูนำทาง */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url(https://img5.pic.in.th/file/secure-sv1/Linie-Bez-Szwu-Wzor-Linie-Bezszwowy-Wzor-PNG-i-wektor-do-pobrania-za-darmo.jpg);
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #444;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #fbfbfb;
+            border-radius: 5px;
+        }
+
+        /* กล่องข่าวสาร */
+        .news-board {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .news-card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .news-card h3 {
+            color: #483e3e;
+            margin: 0 0 10px;
+        }
+
+        .news-card p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .news-card:nth-child(odd) {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- ส่วนหัว -->
+    <header>
+        <div class="profile">
+            <img src="https://img2.pic.in.th/pic/download-2c02bdba43e2efe0d.jpg" alt="Profile Icon">
+            <span>Username</span>
+        </div>
+        <h1>Fashion Shop</h1>
+        <p>Your style, your way!</p>
+    </header>
+
+    <!-- เมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- บอร์ดข่าว ประชาสัมพันธ์ -->
+    <div class="news-board">
+        <div class="news-card">
+            <h3>New Arrival</h3>
+            <p>Check out our latest collection of summer wear, now available in the gallery!</p>
+        </div>
+        <div class="news-card">
+            <h3>Special Discount</h3>
+            <p>Get up to 50% off on selected items. Don't miss out!</p>
+        </div>
+        <div class="news-card">
+            <h3>Fashion Tips</h3>
+            <p>Learn how to style your outfits with our latest blog posts!</p>
+        </div>
+        <div class="news-card">
+            <h3>Upcoming Event</h3>
+            <p>Join our exclusive fashion show this weekend. Limited seats available!</p>
+        </div>
+    </div>
+</body>
+</html>
